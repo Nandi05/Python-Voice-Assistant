@@ -41,7 +41,7 @@ def sendEmail(to,content):
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo #to identify the domain name of the sending hosst to smtp before issuing a mail
     server.starttls #protocol command that tells an email server that the email client wnats to turn from an insecure connectioon to a secured one
-    server.login('nandiniwadhwa08@gmail.com','bharatwadhwa')
+    server.login('nandiniwadhwa08@gmail.com','************') #password has to be written here
     server.sendmail('nandiniwadhwa08@gmail.com',to,content)
     server.close()
 
